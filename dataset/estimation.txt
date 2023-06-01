@@ -1,0 +1,46 @@
+KT Informatik Project charge:
+    KT Informatik Project:
+        1. Database Developemnt
+        2. Software Development
+        3. Data Analysis
+        4. Data Analysis & Prediction
+
+    KT Informatik Project Requirementions:
+        Database Development:
+            1. Hosting Server
+            2. Computer Unit
+            3. developers
+        
+        Software Development:
+            1. Hossain Server
+            2. Computer Unit
+            3. developers
+        
+        Data Analysis:
+            1. Data Analyst
+            2. Computer Unit
+            3. Datasets
+
+        Data Analysis & Prediction:
+            1. Data Analyst
+            2. Computer Unit
+            3. Datasets
+            4. Data presenter
+            
+    1. Hosting Server: $50
+    2. Computer Unit per day: $10
+    3. Developers per hours: $10
+    4. Data Analyst per hours: $15
+    5. Dataset presenter per hours: $9
+    6. Dataset prepare: $10
+
+    KT Informatik working hours:
+        1. Developer work hours per week: 40
+        2. Data Analyst work hours per week: 40
+        3. Data presenter work hours per week: 30
+
+    KT Informatik timeline:
+        1. Database Developemnt needs: 2 weeks
+        2. Software Development needs: 3 weeks
+        3. Data Analysis needs: 3 weeks
+        4. Data Analysis & Prediction needs: 4 weeks
