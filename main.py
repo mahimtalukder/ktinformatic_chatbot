@@ -49,5 +49,5 @@ def fbwebhook():
     return "Unhandled request", 400 
 
 if __name__ =='__main__':
-    app.run()
+    app.run(debug=True, host=config.host, port=config.port)
 

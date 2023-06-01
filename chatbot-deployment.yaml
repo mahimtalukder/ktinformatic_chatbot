@@ -25,8 +25,9 @@ spec:
         io.kompose.service: chatbot
     spec:
       containers:
-        - image: chatbot
+        - image: mahimtalukder/chatbot
           name: chatbot
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
           resources: {}
