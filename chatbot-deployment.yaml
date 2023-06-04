@@ -25,7 +25,7 @@ spec:
         io.kompose.service: chatbot
     spec:
       containers:
-        - image: mahimtalukder/chatbot
+        - image: gcr.io/applied-abbey-356818/chatbot:latest
           name: chatbot
           imagePullPolicy: Always
           ports:

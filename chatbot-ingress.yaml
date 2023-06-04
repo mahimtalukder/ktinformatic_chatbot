@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: chatbot-ingress
+  annotations:
+    networking.gke.io/managed-certificates: "bot-cart"
+spec:
+  rules:
+  - host: bot.ktinformatik.com
+    http:
+      paths:
+      - pathType: ImplementationSpecific
+        backend:
+          service:
+            name: chatbot
+            port:
+              number: 5000
