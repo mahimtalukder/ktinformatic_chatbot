@@ -31,7 +31,6 @@ def openai_chatbot(api_key,file_contents, user_input):
             presence_penalty=0.0,
         )
     
-    print(response)
     
     generated_text = response.choices[0].message.content.strip()
     return generated_text

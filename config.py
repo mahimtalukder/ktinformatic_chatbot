@@ -1,6 +1,6 @@
-open_ai_key = 'sk-V2Jh6xsDHk8aWiT3BlbkFJnXRm6HYOaff5yWK4sZRm'
+open_ai_key = 'sk-0q0JrhBSAVoOH9Uw'
 dataset = 'dataset/output.txt'
-PAGE_ACCESS_TOKEN = "EAANEIEXoO34BAF942F5Kbvm7Kpg66H0GzIt1aRSPye0AayBZCqGJ99jAYsTTZAVm7NkqUzEw9HJt194FVe1kZC9LIToLfjoZA2jQeU9ZC0396EKyjZC77WtsFNLHwvHW8Ycdan3qfjmLh3STSv1j4ZB4cZAltaRrm2VTjsuVr1yksuVsFYS1ZB1eUUALrsNi08rFUVSKk9yHwQgZDZD" 
+PAGE_ACCESS_TOKEN = "EAANEIEXoO34BAPmef801yUGiOx4KigFGaAfM3YlJL4ZB7UjUWgt3foOihOpPDoSDWMGoeZAtwNZCyWDD2QYf9p0IuybYK3a0ltEET5cIn8KiwrdopcQIhRrXZA5ZCQsY8Ns2WcTrwwZDZD" 
 API = f"https://graph.facebook.com/v13.0/me/messages?access_token={PAGE_ACCESS_TOKEN}"
 host='0.0.0.0'
 port=5000

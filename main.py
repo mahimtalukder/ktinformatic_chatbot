@@ -30,19 +30,31 @@ def fbwebhook():
     try:
         message = data['entry'][0]['messaging'][0]['message']
         sender_id = data['entry'][0]['messaging'][0]['sender']['id']
-        chatbot_response = open_ai_model.openai_chatbot(api_key, file_contents, message['text'].lower())
-   
-        request_body = {
-            "recipient": {
-             "id": sender_id
-            },
-            "message": {
-                "text": chatbot_response
-             }
-         }
 
-        response = requests.post(config.API, json=request_body).json()
-        return jsonify(response), 200
+        try:
+            prompt = message['text']
+            chatbot_response = open_ai_model.openai_chatbot(api_key, file_contents, prompt.lower())
+            request_body = {
+                "recipient": {
+                "id": sender_id
+                },
+                "message": {
+                    "text": chatbot_response
+                }
+            }
+            response = requests.post(config.API, json=request_body).json()
+            return jsonify(response), 200
+        except:
+            request_body = {
+                "recipient": {
+                "id": sender_id
+                },
+                "message": {
+                    "text": "Sorry, I can process only text messages for now."
+                }
+            }
+            response = requests.post(config.API, json=request_body).json()
+            return jsonify(response), 200
     except requests.exceptions.RequestException:
         return "not ok", 500 
     
